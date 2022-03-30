@@ -6,16 +6,18 @@ class Navigations extends React.Component {
     return (
       <>
         <div className="topnav">
-          {/* <NavLink to="/" exact={true}>
+          <NavLink to="/" exact={true}>
             Home
           </NavLink>
           <NavLink to="/listToDo">ToDo</NavLink>
-          <NavLink to="/MyComponents">MyComponents</NavLink> */}
-          <NavLink to="/" exact={true}>
+          <NavLink to="/MyComponents">MyComponents</NavLink>
+          {/* <NavLink to="/" exact={true}>
             Form
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/formTask">FormTask</NavLink>
           <NavLink to="/users">ListUsers</NavLink>
+          <NavLink to="/colorBox">ColorBox</NavLink>
+          <NavLink to="/todoList">TodoList</NavLink>
         </div>
       </>
     );

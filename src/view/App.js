@@ -11,6 +11,8 @@ import ListUser from "./Users/ListUser";
 import DetailUser from "./Users/DetailUser";
 import SignupForm from "./Forms/SignupForm";
 import FormTask from "./Task/FormTask";
+import ColorBox from "./Hook/UseState-EasyFrontEnd/ColorBox/ColorBox";
+import Index from "./Hook/UseState-EasyFrontEnd/ToDoList/Index";
 
 function App() {
   return (
@@ -19,7 +21,7 @@ function App() {
         <header className="App-header">
           <Navigations />
           <Switch>
-            {/* <Route path="/" exact>
+            <Route path="/" exact>
               <Home />
             </Route>
             <Route path="/MyComponents">
@@ -27,10 +29,10 @@ function App() {
             </Route>
             <Route path="/listToDo">
               <ListToDo />
-            </Route> */}
-            <Route path="/" exact>
-              <SignupForm />
             </Route>
+            {/* <Route path="/" exact>
+              <SignupForm />
+            </Route> */}
             <Route path="/formTask">
               <FormTask />
             </Route>
@@ -39,6 +41,12 @@ function App() {
             </Route>
             <Route path="/users/:id">
               <DetailUser />
+            </Route>
+            <Route path="/colorBox">
+              <ColorBox />
+            </Route>
+            <Route path="/todoList">
+              <Index />
             </Route>
           </Switch>
 

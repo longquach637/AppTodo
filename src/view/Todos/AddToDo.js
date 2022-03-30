@@ -43,5 +43,4 @@ class AddToDo extends React.Component {
     );
   }
 }
-
 export default AddToDo;
