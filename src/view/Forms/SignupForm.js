@@ -22,11 +22,10 @@ class SignupForm extends React.Component {
       this.props.values.password,
       this.props.values.email
     );
-    {
-      this.props.values.username === "admin" &&
-        this.props.values.email === "admin@gmail.com" &&
-        this.props.history.push("/formTask");
-    }
+
+    this.props.values.username === "admin" &&
+      this.props.values.email === "admin@gmail.com" &&
+      this.props.history.push("/formTask");
   };
   render() {
     console.log(">>>Check props Formik: ", this.props);

@@ -172,7 +172,7 @@ class FormTask extends React.Component {
         });
       }
       //filter theo status
-      task = task.filter((task) => {
+      task = task?.filter((task) => {
         if (filter.status === -1) {
           return task;
         } else {

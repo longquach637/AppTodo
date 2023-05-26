@@ -1,18 +1,16 @@
-import logo from "../assets/images/logo.svg";
-import "./App.scss";
-import MyComponents from "./Example/MyComponents";
-import ListToDo from "./Todos/ListToDo";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import Navigations from "./Navigations/Navigation";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "./App.scss";
+import DragAndDrop from "./DragAndDrop/DragAndDrop";
+import MyComponents from "./Example/MyComponents";
 import Home from "./Home/Home";
-import ListUser from "./Users/ListUser";
-import DetailUser from "./Users/DetailUser";
-import SignupForm from "./Forms/SignupForm";
-import FormTask from "./Task/FormTask";
 import ColorBox from "./Hook/UseState-EasyFrontEnd/ColorBox/ColorBox";
-import Index from "./Hook/UseState-EasyFrontEnd/ToDoList/Index";
+import Navigations from "./Navigations/Navigation";
+import FormTask from "./Task/FormTask";
+import ListToDo from "./Todos/ListToDo";
+import DetailUser from "./Users/DetailUser";
+import ListUser from "./Users/ListUser";
 
 function App() {
   return (
@@ -45,8 +43,8 @@ function App() {
             <Route path="/colorBox">
               <ColorBox />
             </Route>
-            <Route path="/todoList">
-              <Index />
+            <Route path="/dragDrop">
+              <DragAndDrop />
             </Route>
           </Switch>
 

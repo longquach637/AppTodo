@@ -112,7 +112,6 @@ class ListToDo extends React.Component {
   render() {
     console.log(">>>check props redux:", this.props.reduxList);
     let listToDo = this.props.reduxList;
-    console.log(">>>check list to do redux:", listToDo);
 
     return (
       <>
